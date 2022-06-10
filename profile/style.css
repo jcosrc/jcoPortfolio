@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lucida Sans", sans-serif;
+  }
+  body {
+    height: 100%;
+    background: linear-gradient(rgba(1, 32, 78, 0.5),rgba(1, 32, 78, 0.2)), url("../image/desk.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  } 
+  
+/* -- start of main header*/
+  .header {
+    color: #ffffff;
+    padding: 15px;
+  }
+  .header a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 900;
+      color: rgb(255, 255, 255);
+  }
+  .header span {
+      color: red;
+      font-size: 30px;
+  }
+  .menu ul {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 4px;
+    margin-bottom: 7px;
+    color: #ffffff;
+    margin: 3% 10% 0;
+    
+  }
+
+  .menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    
+  }
+  
+  .menu li a:hover,
+  .menu li a:active {
+    font-size: 180%;
+    color: rgb(0, 216, 198);
+    text-decoration: overline;
+  }
+  hr {
+      width: 80%;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* -- end of main header*/
+  .myInfo > img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid rgb(205, 238, 253);
+    top: 25%;
+    left: 22%;
+    border-radius: 50%;
+    filter: brightness(90%);
+  }
+  .myDetails {
+    position: absolute;
+    padding: 25px;
+    border-radius: 25px;
+    top: 55%;
+    left: 17%;
+    color:rgb(252, 252, 252);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .myName {
+    font-size: 30px;
+    color: rgb(124, 213, 255);
+    line-height: 50px;
+  }
+  .courseWork {
+      position: absolute;
+      top: 18%;
+      right: 13.5%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 25px;
+      border-radius: 20px;
+      color: rgb(205, 238, 253);
+  }
+  .courseWork > p {
+      font-size: large;
+  }
+  .courseWork > p > span {
+      font-weight: bold;
+  }
+  .courseWork .details {
+      margin-left: 30px;
+      color: rgb(255, 255, 255);
+  }
+  .myLang {
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+  }
+  .myLang h3 {
+      font-size: 18px;
+      background-color: #6764ffb4;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .imgLang ul {
+    display: flex;
+    right: 0.1%;
+  }
+  .imgLang ul li {
+      list-style-type: none;
+      margin: 0 30px 0;
+  }
+  .imgLang ul li img {
+      width: 65px;
+      height: auto;
+      
+  }
+  .imgLang p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+  .myOs {
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+  }
+  .myOs h3 {
+    font-size: 18px;
+      background-color: #6764ffb4;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .myOs ul {
+    display: flex;
+  }
+  .myOs ul li {
+    list-style-type: none;
+    margin: 0 30px 0;
+  }
+  .imgOs p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+  .myOs ul li img {
+    width: 65px;
+  }
+  .footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }

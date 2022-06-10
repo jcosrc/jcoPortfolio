@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-size: 100%;
+  background: linear-gradient(rgba(10, 38, 80, 0.5),rgba(1, 32, 78, 0.2)), url("../image/desk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+
+/* -- start of main header*/
+.main-header {
+  color: #ffffff;
+  position: sticky;
+}
+.header span {
+  color: red;
+  font-size: 8vw;
+}
+.header a {
+    text-decoration: none;
+    font-size: 7vw;
+    color: #eaeaea;
+}
+.menu {
+  color: rgb(255, 255, 255);
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  list-style-type: none;
+  margin-right: 2rem;
+} 
+
+.menu li a {
+  text-decoration: none;
+  font-size: .7rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.menu ul li .active {
+  color: #00ffdd;
+  font-size: 1rem;
+}
+.line {
+  background-color:  white;
+}
+.main-header {
+  line-height: 0;
+}
+.menu li a:hover,
+.menu li a:active {
+  color: rgb(245, 253, 253);
+  font-size: 1rem;
+  text-shadow: 0 0 8px rgba(249, 252, 251, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 30px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #c95e5e98;
+  
+}
+/* -- end of main header*/
+/* -- start of index body -- */
+.frontName {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+
+}
+.frontImg img {
+  width: 10rem;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+.frontName p {
+  line-height: auto;
+  font-size: 1rem;
+  font-style: italic;
+  color: white;
+  
+}
+.frontName h1 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.myName {
+  font-size: 2rem;
+  text-shadow: 0 0 8px rgba(179, 185, 192, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 30px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #c95e5e98;
+}
+
+footer {
+  color: white;
+  background-color: rgba(20, 133, 141, 0.185);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  height: auto;
+  font-size: .8rem;
+  line-height: 0;
+}
+footer ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+/* start of About me style*/
+.frontAboutName {
+  color: rgba(204, 204, 204, 0.603);
+  font-weight: bold;
+  text-align: center;
+}
+.myInfo {
+  text-align: center;
+}
+
+.myInfo img {
+  width: 10rem;
+  border-radius: 50%;
+}
+.myDetails {
+  color: #d3d3d3;
+  text-align: center;
+}
+.courseWork {
+  color: #d3d3d3;
+  text-align: center;
+}
+.progLang {
+  width: 100%;
+  text-align: center;
+  color: #d3d3d3;
+}
+.checked {
+  color: #ff9d2d;
+}
+.progLang ul {
+  display: flex;
+  justify-content: center;
+}
+.progLang ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+  text-align: center;
+}
+.progLang ul li img {
+  width: 2rem;
+}
+.progLang p {
+  font-size: 1rem;
+  text-align: center;
+}
+#imgJava {
+  background-color: #ffffff;
+}
+/*end of about me style*/
+
+/*start of Project style*/
+
+.projects h1 {
+  color: #eaeaea;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 30px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #ac6b6b98;
+}
+.projects h1:hover {
+  color: #eaeaea;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 20px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #ac6b6b98;
+}
+ 
+.container {
+  margin: 1rem auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.container .thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.container .thumbnail .projectImg {
+  margin: 15px;
+  height: 150px;
+  width: 200px;
+  transition: all 0.2s;
+  object-fit: fill;
+ 
+  cursor: pointer;
+}
+.container .thumbnail .projectImg:hover {
+  box-shadow: 1px 10px 20px white;
+  opacity: 0.8;
+}
+
+
+.active {
+  opacity: 0.5;
+}
+/*end of Project style*/
+
+/*start of Contact style*/
+.contactForm {
+  text-align: center;
+}
+.contactForm h1 {
+  color: #fafafa;
+  text-shadow: 0 0 8px rgba(249, 252, 251, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 30px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #c95e5e98;
+}
+.contactForm input {
+  width: 20rem;
+  height: 2.5rem;
+  margin: .5rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contactForm p {
+  color: #fafafa;
+  font-weight: bold;
+}
+.contactForm textarea {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.contactForm .btnSubmit {
+  margin-top: 2.5rem;
+  width: 10rem;
+  height: 3.5rem;
+  font-weight: bold;
+  background-color: #ff7300;
+  color: white;
+}
+.contactForm .btnSubmit:hover {
+  box-shadow: 0 0 8px rgba(249, 252, 251, 0.664), 0 0 2px rgba(230, 227, 227, 0.527), 
+  0 0 30px #fefeff, 0 0 40px #fafafa, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 70px #c95e5e98;
+}
+/*end of Contact style*/
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 412px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 500px) {
+  .main-header {
+    color: #ffffff;
+    position: sticky;
+    margin-top: 2rem;
+  }
+  .header span {
+    color: red;
+    font-size: 2.5rem;
+  }
+  .header a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #eaeaea;
+  }
+  .menu {
+    color: rgb(255, 255, 255);
+  }
+  .menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  .menu li {
+    list-style-type: none;
+    margin-right: 2rem;
+  } 
+  
+  .menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .line {
+    background-color:  white;
+  }
+  .main-header {
+    line-height: 0;
+  }
+  .menu li a:hover,
+  .menu li a:active {
+    color: rgb(245, 253, 253);
+    font-size: 2rem;
+  }
+  /* -- end of main header*/
+
+  .frontName {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .frontName p {
+    line-height: auto;
+    font-size: 1rem;
+  }
+  .frontName h1 {
+    font-size: 1.7rem;
+  }
+  .main-footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 94%;
+    text-align: right;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .footer ul {
+    display: inline;
+    padding: 0;
+  }
+  .footer ul li {
+    list-style-type: none;
+    padding: 0;
+  }
+  .checked {
+    color: #ff9d2d;
+  }
+  .progLang ul li img {
+    width: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+.rDetails {
+  margin-top: 1rem;
+  background: linear-gradient(rgba(10, 38, 80, 0.5),rgba(1, 32, 78, 0.2));
+  letter-spacing: .1rem;
+}
+.mySchool {
+  font-size: .8rem;
+}
+.mySchool span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.courseWork span {
+  font-weight: bold;
+  color: #ff9d2d;
+}
+.progLang {
+  font-size: 1.5rem;
+}
+.checked {
+  color: #ff9d2d;
+}
+.myOs {
+  font-size: 1.3rem;
+}
+.progLang ul li img {
+  width: 2rem;
+}
+.progLang ul li span {
+  width: 1rem;
+}
+.myOs ul li img {
+  width: 3.5rem;
+  height: 3.3rem;
+}
+.imgLang ul li p {
+  font-size: 1.3rem;
+}
+.imgOs ul li p {
+  font-size: 1.3rem;
+}
+
+.projects {
+  padding-left: 10rem;
+  background: linear-gradient(rgba(10, 38, 80, 0.5),rgba(1, 32, 78, 0.2));
+}
+}
+
+
+
